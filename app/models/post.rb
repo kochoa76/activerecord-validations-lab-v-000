@@ -5,5 +5,5 @@ class Post < ActiveRecord::Base
   validates :summary, length: {maximum: 250}
   validates :category, inclusion: {in: %w(fiction, non-fiction),
   message: "%{value} is not an appropriate category"
-end
+
 end
